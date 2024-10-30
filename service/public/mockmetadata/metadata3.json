@@ -1,0 +1,23 @@
+{
+  "name": "PnL #01J9Y1P3THAC3RMF79TNZ0WTB7",
+  "description": "Binance Future Trade PnL",
+  "image": "https://ticketmock.blocknaut.xyz/static/mockimg/canvasFuture3.png",
+  "attributes": [
+    {
+      "trait_type": "exchange",
+      "value": "Binance"
+    },
+    {
+      "trait_type": "symbol",
+      "value": "TURBOUSDT"
+    },
+    {
+      "trait_type": "pnl",
+      "value": "-100"
+    },
+    {
+      "trait_type": "time",
+      "value": "1728653922"
+    }
+  ]
+}
