@@ -1,0 +1,12 @@
+{
+  "lastUpdate": { "timestamp": "1730271468", "block_number": "2636233" },
+  "addresses": {
+    "proxyAdmin": "0x990562b38d931bb36e9e528a95697371a3e8ff90",
+    "veritradeServiceManager": "0xc661e22776219c7bbc223349b36b2c00f0d4332e",
+    "veritradeServiceManagerImpl": "0xbcc4979b7ecd2adbe1ffed0aee101d536170b87d",
+    "stakeRegistry": "0x4339b0713a13649bdff12276cb0067473301f30f",
+    "stakeRegistryImpl": "0x3a17073fa6ab28361ea0741f681267f1b8f97afb",
+    "strategy": "0x9a825c69028740321463be210617f496090d4ab4",
+    "token": "0xc7f2cf4845c6db0e1a1e91ed41bcd0fcc1b0e141"
+  }
+}

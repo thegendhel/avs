@@ -15,10 +15,10 @@ const skipArg = args.find((arg) => arg.startsWith("--skip-operator"));
 const isRegisterOperatorSkip = skipArg ? true : false;
 
 // Setup env variables
-const provider = new ethers.JsonRpcProvider(process.env.RPC_URL);
-const wallet = new ethers.Wallet(process.env.PRIVATE_KEY!, provider);
+const provider = new ethers.JsonRpcProvider(process.env.HOLESKY_RPC_URL);
+const wallet = new ethers.Wallet(process.env.HOLESKY_PRIVATE_KEY!, provider);
 /// TODO: Hack
-let chainId = 31337;
+let chainId = 17000;
 
 const avsDeploymentData = JSON.parse(fs.readFileSync(path.resolve(__dirname, `../contracts/deployments/veritrade/${chainId}.json`), 'utf8'));
 // Load core deployment data
@@ -160,7 +160,7 @@ const registerOperator = async () => {
     
     // Sign the digest hash with the operator's private key
     console.log("Signing digest hash with operator's private key");
-    const operatorSigningKey = new ethers.SigningKey(process.env.PRIVATE_KEY!);
+    const operatorSigningKey = new ethers.SigningKey(process.env.HOLESKY_PRIVATE_KEY!);
     const operatorSignedDigestHash = operatorSigningKey.sign(operatorDigestHash);
 
     // Encode the signature in the required format

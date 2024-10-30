@@ -5,10 +5,10 @@ const path = require('path');
 dotenv.config();
 
 // Setup env variables
-const provider = new ethers.JsonRpcProvider(process.env.RPC_URL);
-const wallet = new ethers.Wallet(process.env.PRIVATE_KEY!, provider);
+const provider = new ethers.JsonRpcProvider(process.env.HOLESKY_RPC_URL);
+const wallet = new ethers.Wallet(process.env.HOLESKY_PRIVATE_KEY!, provider);
 /// TODO: Hack
-let chainId = 31337;
+let chainId = 17000;
 
 const avsDeploymentData = JSON.parse(fs.readFileSync(path.resolve(__dirname, `../contracts/deployments/veritrade/${chainId}.json`), 'utf8'));
 const veritradeServiceManagerAddress = avsDeploymentData.addresses.veritradeServiceManager;
@@ -63,7 +63,7 @@ function startCreatingTasks() {
     data = generateRandomData();
     console.log(`Creating new task with data: ${data}`);
     createNewTask(data[0], data[1], data[2]);
-  }, 5000);
+  }, 15000);
 }
 
 // Start the process

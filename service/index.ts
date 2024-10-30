@@ -60,7 +60,7 @@ app.get('/ticket/:id', async (req: Request, res: Response) => {
   return res.status(200).json({
     api_key: API_KEY,
     query_string: finalQueryString,
-    metadata: `https://ticketmock.blocknaut.xyz/mockmetadata/metadata${data.meta}.json`
+    metadata: `https://ticketmock.blocknaut.xyz/static/mockmetadata/metadata${data.meta}.json`
   });
 
 });
