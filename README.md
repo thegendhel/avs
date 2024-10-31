@@ -4,7 +4,7 @@ Create proof of your CEX trades Pnl and verify it onchain via AVS
 
 ## Overview
 
-![alt text](https://github.com/thegendhel/avs/blob/main/veritrade.jpg?raw=true)
+![alt text](https://github.com/thegendhel/avs/blob/main/veritrade.png?raw=true)
 
 The trader create a ticket in the service, which will later be used by AVS to obtain the API key and signature needed to call the Binance API.
 
