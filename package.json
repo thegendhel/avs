@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start:service": "ts-node service/index.ts",
+    "start:service": "ts-node service/index.ts", 
     "start:operator": "ts-node operator/index.ts",
     "start:operator:skip": "ts-node operator/index.ts -- --skip-operator",
     "start:traffic": "ts-node operator/createNewTasks.ts",
