@@ -36,6 +36,10 @@ $ forge script script/DeployEigenLayerCore.s.sol --rpc-url <RPC_URL> --broadcast
 $ forge script script/VeritradeDeployer.s.sol --rpc-url  <RPC_URL> --broadcast
 ```
 
+### Deployed Veritrade SC in Holesky
+
+https://holesky.etherscan.io/address/0xc661e22776219c7bbc223349b36b2c00f0d4332e
+
 ## AVS Operator
 
 ### Run AVS Operator
